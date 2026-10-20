@@ -164,7 +164,20 @@ class Generador:
             for col in tabla["columnas"]:
                 fila[col["nombre"]] = self.valor(tabla["nombre"], col, fila, i)
             filas.append(fila)
+        if tabla["nombre"] == "empleados" and self.parametros.get("activos_objetivo"):
+            filas = self.recortar_a_activos(filas, self.parametros["activos_objetivo"])
         return filas
+
+    def recortar_a_activos(self, filas, objetivo):
+        """Con una dotacion objetivo, se generan empleados de mas y se corta en el que completa esa cantidad de activos al corte."""
+        corte = self.parametros["corte"]
+        activos = 0
+        for i, e in enumerate(filas):
+            if e["fecha_ingreso"] <= corte and (e["fecha_baja"] is None or e["fecha_baja"] > corte):
+                activos += 1
+                if activos == objetivo:
+                    return filas[: i + 1]
+        return filas  # no alcanzo la dotacion: se deja todo (determinista)
 
     def todo(self, config):
         for tabla in config["tablas"]:
