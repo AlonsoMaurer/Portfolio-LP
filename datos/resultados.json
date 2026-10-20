@@ -1,0 +1,335 @@
+{
+  "resultados": {
+    "dotacion_activa": {
+      "forma": "escalar",
+      "valor": 985
+    },
+    "rotacion_anual": {
+      "forma": "escalar",
+      "valor": 3.8
+    },
+    "rotacion_mensual": {
+      "forma": "serie",
+      "filas": [
+        {
+          "periodo": "2025-01",
+          "valor": 6
+        },
+        {
+          "periodo": "2025-02",
+          "valor": 2
+        },
+        {
+          "periodo": "2025-03",
+          "valor": 6
+        },
+        {
+          "periodo": "2025-04",
+          "valor": 3
+        },
+        {
+          "periodo": "2025-05",
+          "valor": 1
+        },
+        {
+          "periodo": "2025-06",
+          "valor": 5
+        },
+        {
+          "periodo": "2025-07",
+          "valor": 2
+        },
+        {
+          "periodo": "2025-08",
+          "valor": 3
+        },
+        {
+          "periodo": "2025-09",
+          "valor": 4
+        },
+        {
+          "periodo": "2025-10",
+          "valor": 1
+        },
+        {
+          "periodo": "2025-11",
+          "valor": 2
+        },
+        {
+          "periodo": "2025-12",
+          "valor": 1
+        }
+      ]
+    },
+    "dotacion_por_depto": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "Operaciones",
+          "valor": 326
+        },
+        {
+          "categoria": "Tecnología",
+          "valor": 228
+        },
+        {
+          "categoria": "Comercial",
+          "valor": 207
+        },
+        {
+          "categoria": "Finanzas",
+          "valor": 135
+        },
+        {
+          "categoria": "Personas",
+          "valor": 89
+        }
+      ]
+    },
+    "antiguedad_promedio": {
+      "forma": "escalar",
+      "valor": 4.7
+    },
+    "salario_por_nivel": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "N1",
+          "valor": 1335970.0
+        },
+        {
+          "categoria": "N2",
+          "valor": 1776858.0
+        },
+        {
+          "categoria": "N3",
+          "valor": 2191048.0
+        },
+        {
+          "categoria": "N4",
+          "valor": 2633118.0
+        },
+        {
+          "categoria": "N5",
+          "valor": 3053437.0
+        }
+      ]
+    },
+    "compa_ratio": {
+      "forma": "escalar",
+      "valor": 0.98
+    },
+    "fuera_de_banda": {
+      "forma": "escalar",
+      "valor": 0.0
+    },
+    "brecha_genero": {
+      "forma": "escalar",
+      "valor": 4.4
+    },
+    "brecha_genero_nivel": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "N1",
+          "valor": 0.9
+        },
+        {
+          "categoria": "N2",
+          "valor": 2.7
+        },
+        {
+          "categoria": "N3",
+          "valor": 5.7
+        },
+        {
+          "categoria": "N4",
+          "valor": 5.3
+        },
+        {
+          "categoria": "N5",
+          "valor": 7.3
+        }
+      ]
+    },
+    "gasto_vs_presupuesto": {
+      "forma": "escalar",
+      "valor": 83.4
+    },
+    "presupuesto_anual": {
+      "forma": "escalar",
+      "valor": 29655564000.0
+    },
+    "desviacion_por_depto": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "Finanzas",
+          "valor": -12.5
+        },
+        {
+          "categoria": "Comercial",
+          "valor": -14.9
+        },
+        {
+          "categoria": "Personas",
+          "valor": -15.8
+        },
+        {
+          "categoria": "Tecnología",
+          "valor": -17.4
+        },
+        {
+          "categoria": "Operaciones",
+          "valor": -18.7
+        }
+      ]
+    },
+    "gasto_mensual": {
+      "forma": "serie",
+      "filas": [
+        {
+          "periodo": "2025-01",
+          "valor": 1997720000.0
+        },
+        {
+          "periodo": "2025-02",
+          "valor": 2013897000.0
+        },
+        {
+          "periodo": "2025-03",
+          "valor": 2008455000.0
+        },
+        {
+          "periodo": "2025-04",
+          "valor": 2021094000.0
+        },
+        {
+          "periodo": "2025-05",
+          "valor": 2041825000.0
+        },
+        {
+          "periodo": "2025-06",
+          "valor": 2081109000.0
+        },
+        {
+          "periodo": "2025-07",
+          "valor": 2115308000.0
+        },
+        {
+          "periodo": "2025-08",
+          "valor": 2135041000.0
+        },
+        {
+          "periodo": "2025-09",
+          "valor": 2144588000.0
+        }
+      ]
+    },
+    "proyeccion_cierre": {
+      "forma": "escalar",
+      "valor": 24953974000.0
+    },
+    "rotacion_temprana_pct": {
+      "forma": "escalar",
+      "valor": 16.6
+    },
+    "bajas_por_tramo": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "T1",
+          "valor": 45
+        },
+        {
+          "categoria": "T2",
+          "valor": 124
+        },
+        {
+          "categoria": "T3",
+          "valor": 96
+        }
+      ]
+    },
+    "rotacion_por_depto": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "Operaciones",
+          "valor": 11
+        },
+        {
+          "categoria": "Tecnología",
+          "valor": 8
+        },
+        {
+          "categoria": "Finanzas",
+          "valor": 7
+        },
+        {
+          "categoria": "Personas",
+          "valor": 6
+        },
+        {
+          "categoria": "Comercial",
+          "valor": 4
+        }
+      ]
+    }
+  },
+  "analisis": {
+    "rotacion_media_movil": {
+      "forma": "serie",
+      "filas": [
+        {
+          "periodo": "2025-01",
+          "valor": 6
+        },
+        {
+          "periodo": "2025-02",
+          "valor": 4
+        },
+        {
+          "periodo": "2025-03",
+          "valor": 4.7
+        },
+        {
+          "periodo": "2025-04",
+          "valor": 3.7
+        },
+        {
+          "periodo": "2025-05",
+          "valor": 3.3
+        },
+        {
+          "periodo": "2025-06",
+          "valor": 3
+        },
+        {
+          "periodo": "2025-07",
+          "valor": 2.7
+        },
+        {
+          "periodo": "2025-08",
+          "valor": 3.3
+        },
+        {
+          "periodo": "2025-09",
+          "valor": 3
+        },
+        {
+          "periodo": "2025-10",
+          "valor": 2.7
+        },
+        {
+          "periodo": "2025-11",
+          "valor": 2.3
+        },
+        {
+          "periodo": "2025-12",
+          "valor": 1.3
+        }
+      ]
+    }
+  }
+}
