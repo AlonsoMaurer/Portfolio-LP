@@ -165,6 +165,79 @@
           }
         }
       ]
+    },
+    {
+      "nombre": "dotacion_autorizada",
+      "filas": 5,
+      "derivada": {
+        "regla": "cupos",
+        "de": "empleados",
+        "factores": [
+          1.06,
+          1.12,
+          1.18,
+          1.09,
+          1.15
+        ]
+      },
+      "columnas": [
+        {
+          "nombre": "departamento",
+          "tipo": "TEXT",
+          "gen": {
+            "t": "fija"
+          }
+        },
+        {
+          "nombre": "cupos",
+          "tipo": "INTEGER",
+          "gen": {
+            "t": "fija"
+          }
+        }
+      ]
+    },
+    {
+      "nombre": "presupuesto",
+      "filas": 60,
+      "derivada": {
+        "regla": "presupuesto",
+        "de": "empleados",
+        "cupos": "dotacion_autorizada",
+        "meses_con_gasto": 9,
+        "desvio_pct": 3,
+        "deriva_mensual_pct": 0.1
+      },
+      "columnas": [
+        {
+          "nombre": "mes",
+          "tipo": "TEXT",
+          "gen": {
+            "t": "fija"
+          }
+        },
+        {
+          "nombre": "departamento",
+          "tipo": "TEXT",
+          "gen": {
+            "t": "fija"
+          }
+        },
+        {
+          "nombre": "presupuestado",
+          "tipo": "REAL",
+          "gen": {
+            "t": "fija"
+          }
+        },
+        {
+          "nombre": "gasto_real",
+          "tipo": "REAL",
+          "gen": {
+            "t": "fija"
+          }
+        }
+      ]
     }
   ],
   "kpis": [
@@ -206,6 +279,38 @@
     },
     {
       "id": "brecha_genero_nivel",
+      "forma": "categorias"
+    },
+    {
+      "id": "gasto_vs_presupuesto",
+      "forma": "escalar"
+    },
+    {
+      "id": "presupuesto_anual",
+      "forma": "escalar"
+    },
+    {
+      "id": "desviacion_por_depto",
+      "forma": "categorias"
+    },
+    {
+      "id": "gasto_mensual",
+      "forma": "serie"
+    },
+    {
+      "id": "proyeccion_cierre",
+      "forma": "escalar"
+    },
+    {
+      "id": "rotacion_temprana_pct",
+      "forma": "escalar"
+    },
+    {
+      "id": "bajas_por_tramo",
+      "forma": "categorias"
+    },
+    {
+      "id": "rotacion_por_depto",
       "forma": "categorias"
     }
   ],

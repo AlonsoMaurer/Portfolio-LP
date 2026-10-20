@@ -151,6 +151,130 @@
           "valor": 7.4
         }
       ]
+    },
+    "gasto_vs_presupuesto": {
+      "forma": "escalar",
+      "valor": 83.6
+    },
+    "presupuesto_anual": {
+      "forma": "escalar",
+      "valor": 30111396000.0
+    },
+    "desviacion_por_depto": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "Finanzas",
+          "valor": -11.9
+        },
+        {
+          "categoria": "Comercial",
+          "valor": -15.0
+        },
+        {
+          "categoria": "Personas",
+          "valor": -15.4
+        },
+        {
+          "categoria": "Tecnología",
+          "valor": -17.1
+        },
+        {
+          "categoria": "Operaciones",
+          "valor": -18.6
+        }
+      ]
+    },
+    "gasto_mensual": {
+      "forma": "serie",
+      "filas": [
+        {
+          "periodo": "2025-01",
+          "valor": 2030264000.0
+        },
+        {
+          "periodo": "2025-02",
+          "valor": 2050147000.0
+        },
+        {
+          "periodo": "2025-03",
+          "valor": 2043956000.0
+        },
+        {
+          "periodo": "2025-04",
+          "valor": 2057058000.0
+        },
+        {
+          "periodo": "2025-05",
+          "valor": 2079549000.0
+        },
+        {
+          "periodo": "2025-06",
+          "valor": 2119031000.0
+        },
+        {
+          "periodo": "2025-07",
+          "valor": 2153149000.0
+        },
+        {
+          "periodo": "2025-08",
+          "valor": 2173299000.0
+        },
+        {
+          "periodo": "2025-09",
+          "valor": 2183226000.0
+        }
+      ]
+    },
+    "proyeccion_cierre": {
+      "forma": "escalar",
+      "valor": 25399353000.0
+    },
+    "rotacion_temprana_pct": {
+      "forma": "escalar",
+      "valor": 16.7
+    },
+    "bajas_por_tramo": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "T1",
+          "valor": 46
+        },
+        {
+          "categoria": "T2",
+          "valor": 124
+        },
+        {
+          "categoria": "T3",
+          "valor": 99
+        }
+      ]
+    },
+    "rotacion_por_depto": {
+      "forma": "categorias",
+      "filas": [
+        {
+          "categoria": "Operaciones",
+          "valor": 12
+        },
+        {
+          "categoria": "Tecnología",
+          "valor": 8
+        },
+        {
+          "categoria": "Finanzas",
+          "valor": 7
+        },
+        {
+          "categoria": "Personas",
+          "valor": 6
+        },
+        {
+          "categoria": "Comercial",
+          "valor": 4
+        }
+      ]
     }
   },
   "analisis": {

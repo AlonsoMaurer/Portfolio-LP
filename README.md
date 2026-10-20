@@ -50,8 +50,8 @@ Semilla de los datos: 1395547109.
 ## Contenido
 
 - `index.html` — Inicio: resumen del panel y acceso a cada página
-- `compensaciones.html` — Compensaciones: Compensaciones y bandas, Equidad salarial
-- `people-analytics.html` — People Analytics: Dotación y rotación
+- `compensaciones.html` — Compensaciones: Compensaciones y bandas, Equidad salarial, Presupuesto y gasto salarial
+- `people-analytics.html` — People Analytics: Dotación y rotación, Rotación temprana y fuga
 - `datos/*.csv` — datos sintéticos de ejemplo
 - `datos/resultados.json` — cifras calculadas con SQL
 - `sql/consultas.sql` — la consulta de cada cifra
@@ -64,6 +64,9 @@ Semilla de los datos: 1395547109.
 
 Son supuestos del autor, pendientes de validación; no son estadísticas reales ni estándares oficiales.
 
+- Cupos autorizados: los empleados activos de cada área al corte, por un factor fijo por área (1,06 a 1,18), redondeado hacia arriba; ningún área queda con más gente que cupos.
+- Presupuesto mensual: los cupos de cada área por el salario base promedio de sus empleados activos; es igual en los 12 meses.
+- Gasto real de enero a septiembre: la suma del salario base de los empleados activos de cada mes, con una desviación determinística de −3 % a +3 % y una deriva leve al alza; octubre a diciembre solo tienen presupuesto.
 - Brecha de género: el salario de las mujeres es entre 1 % y 7 % menor que el de los hombres según el nivel (antes del ruido aleatorio de cada salario).
 
 ## Definición de cada cifra
@@ -78,4 +81,16 @@ Son supuestos del autor, pendientes de validación; no son estadísticas reales 
 - **Empleados fuera de banda:** Porcentaje de activos con salario bajo el mínimo o sobre el máximo de su banda.
 - **Brecha salarial de género:** Promedio simple de las brechas por nivel.
 - **Brecha salarial de género por nivel:** (Salario promedio hombres − mujeres) / hombres, dentro de cada nivel. Es una brecha descriptiva, no un análisis de equidad ajustado.
+- **Gasto real vs. presupuesto:** Gasto salarial real dividido por el presupuestado, en los meses con gasto cerrado.
+- **Presupuesto anual:** Suma del presupuesto de los 12 meses de todas las áreas.
+- **Desviación del gasto por área:** (Gasto real − presupuestado) / presupuestado, por área, en los meses con gasto cerrado; positivo es sobregasto.
+- **Gasto salarial por mes:** Gasto salarial real de cada mes cerrado, sumando todas las áreas.
+- **Proyección de cierre del año:** Gasto real acumulado más el promedio de los últimos 3 meses cerrados por cada mes que falta. Es una proyección simple, no un modelo estadístico.
+- **Bajas en los primeros 12 meses:** Porcentaje de todas las bajas que ocurrieron con menos de 12 meses de antigüedad.
+- **Bajas por tramo de antigüedad:** Cantidad de bajas según la antigüedad al salir: T1 menos de 1 año, T2 de 1 a 3 años, T3 más de 3 años.
+- **Bajas del año por área:** Cantidad de bajas del año de corte en cada área.
 - **Bajas: media móvil de 3 meses:** Promedio de bajas de los últimos 3 meses, calculado con Python estándar.
+
+## Notas sobre las vistas
+
+- **Rotación temprana y fuga:** Análisis descriptivo sobre datos sintéticos: este panel no incluye un modelo predictivo de rotación.
